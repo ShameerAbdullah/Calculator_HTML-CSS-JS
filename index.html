@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LGM_CALCULATOR</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        <table class = "calc">
+            <tr>
+                <td colspan = "4"><input class="display" type="text" id="result" disabled /></td>
+            </tr>
+
+            <tr>
+                <td><input class="toggle" type="button" value="M+" onclick="screens('M+')" /></td>
+                <td><input class="toggle" type="button" value="1" onclick="screens('1')"/></td>
+                <td><input class="toggle" type="button" value="2" onclick="screens('2')"/></td>
+                <td><input class="toggle" type="button" value="3" onclick="screens('3')"/></td>
+                <td><input class="toggle" type="button" value="/" onclick="screens('/')"/></td>
+            </tr>
+            
+            <tr>
+                <td><input class="toggle" type="button" value="M-" onclick="screens('M-')" /></td>
+                <td><input class="toggle" type="button" value="4" onclick="screens('4')"/></td>
+                <td><input class="toggle" type="button" value="5" onclick="screens('5')"/></td>
+                <td><input class="toggle" type="button" value="6" onclick="screens('6')"/></td>
+                <td><input class="toggle" type="button" value="*" onclick="screens('*')"/></td>
+            </tr>
+            
+            <tr>
+                
+                <td><input class="toggle" type="button" value="C" onclick="del()" style="background-color: orangered"/></td>
+                <td><input class="toggle" type="button" value="7" onclick="screens('7')" /></td>
+                <td><input class="toggle" type="button" value="8" onclick="screens('8')" /></td>
+                <td><input class="toggle" type="button" value="9" onclick="screens('9')" /></td>
+                <td><input class="toggle" type="button" value="-" onclick="screens('-')" /></td>
+            </tr>
+            
+            <tr>
+                <td><input class="toggle" type="button" value="." onclick="screens('.')" ></td>
+                <td><input class="toggle" type="button" value="00" onclick="screens('00')" /></td>
+                <td><input class="toggle" type="button" value="0" onclick="screens('0')" /></td>  
+                <td><input class="toggle" type="button" value="=" onclick="calc()" style="background-color:orangered"/></td>
+                <td><input class="toggle" type="button" value="+" onclick="screens('+')" /></td>
+            </tr>
+
+        </table>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
